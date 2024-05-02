@@ -5,7 +5,7 @@ import {BackButton} from '../../../assets/icon';
 const index = ({
   label,
   backgroundColor = 'white',
-  textColor = 'black',
+  textColor = 'white',
   onPress,
   type,
   icon,
@@ -30,7 +30,9 @@ export default index;
 
 const styles = StyleSheet.create({
   container: backgroundColor => ({
-    backgroundColor: backgroundColor,
+    backgroundColor: 'white',
+    borderWidth: 1,
+    borderColor: '#020202',
     paddingVertical: 12,
     borderRadius: 25,
     width: 200,
@@ -40,6 +42,6 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     fontFamily: 'Poppins-Medium',
     fontSize: 19,
-    color: textColor,
+    color: 'black',
   }),
 });
