@@ -35,13 +35,15 @@ const styles = StyleSheet.create({
     borderColor: '#020202',
     paddingVertical: 12,
     borderRadius: 25,
-    width: 200,
+    width: 210,
+    height: 50,
     alignSelf: 'center',
   }),
   label: textColor => ({
     textAlign: 'center',
-    fontFamily: 'Poppins-Medium',
-    fontSize: 19,
+    fontFamily: 'Poppins-Black',
+    fontSize: 22,
+    fontWeight: 'bold',
     color: 'black',
   }),
 });

@@ -14,15 +14,15 @@ export default TextInput;
 
 const styles = StyleSheet.create({
   label: {
-    fontFamily: 'Poppins-Regular',
-    fontSize: 20,
+    fontFamily: 'Poppins-Bold',
+    fontSize: 30,
     color: '#020202',
   },
   input: {
     borderWidth: 1,
     borderColor: '#020202',
     borderRadius: 10,
-    fontFamily: 'Poppins-Regular',
+    fontFamily: 'Poppins-Black',
     fontSize: 20,
     color: '#8D92A3',
     padding: 10,

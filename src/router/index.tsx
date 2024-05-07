@@ -1,6 +1,6 @@
 import React from 'react';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import {SplashScreen, SignWith, loginAdmin} from '../pages';
+import {SplashScreen, SignWith, loginAdmin, loginStudents} from '../pages';
 
 const Stack = createNativeStackNavigator();
 const index = () => {
@@ -19,6 +19,11 @@ const index = () => {
       <Stack.Screen
         name="loginAdmin"
         component={loginAdmin}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="loginStudents"
+        component={loginStudents}
         options={{headerShown: false}}
       />
     </Stack.Navigator>
