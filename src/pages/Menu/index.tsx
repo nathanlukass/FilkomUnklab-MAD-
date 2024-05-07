@@ -14,29 +14,29 @@ const Home = ({navigation}) => {
           onPress={() => navigation.navigate('Profile')}
         />
         <Button2
-          label="Login"
+          label="Take Attendance"
           onPress={() => navigation.navigate('SplashScreen')}
         />
       </View>
       <Gap height={25} />
       <View style={styles.row}>
         <Button2
-          label="Admin"
+          label="Seatting Map"
           onPress={() => navigation.navigate('SplashScreen')}
         />
         <Button2
-          label="Button 4"
-          onPress={() => navigation.navigate('SignWith')}
+          label="Statistics"
+          onPress={() => navigation.navigate('Statistics')}
         />
       </View>
       <Gap height={25} />
       <View style={styles.row}>
+        <Button2
+          label="Forum Survey"
+          onPress={() => navigation.navigate('SplashScreen')}
+        />
         <Button2
           label="Points Claim"
-          onPress={() => navigation.navigate('SplashScreen')}
-        />
-        <Button2
-          label="Admin"
           onPress={() => navigation.navigate('SplashScreen')}
         />
       </View>
