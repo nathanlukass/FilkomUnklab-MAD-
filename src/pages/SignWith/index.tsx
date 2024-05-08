@@ -1,7 +1,7 @@
 import {StyleSheet, View, ImageBackground} from 'react-native';
 import React, {useState} from 'react';
 import {Button, Gap} from '../../components/atoms';
-import {backGround} from '../../assets/images'; // Ubah sesuai dengan path gambar background Anda
+import {backGround} from '../../assets/images';
 
 const SignWith = ({navigation}) => {
   return (
@@ -15,7 +15,7 @@ const SignWith = ({navigation}) => {
         <Gap height={12} />
         <Button
           label="Login Student"
-          onPress={() => navigation.navigate('SplashScreen')}
+          onPress={() => navigation.navigate('Home')}
         />
       </View>
     </ImageBackground>

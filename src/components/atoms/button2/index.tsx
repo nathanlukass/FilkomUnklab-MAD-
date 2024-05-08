@@ -1,10 +1,10 @@
 import {StyleSheet, Text, TouchableOpacity} from 'react-native';
 import React from 'react';
-import {Exit, Notif, Profile, BackButton} from '../../../assets/icon';
+import {Exit, BackButton, Notif, Profile} from '../../../../src/assets/icon';
 
 const index = ({
   label,
-  backgroundColor = 'white',
+  backgroundColor = 'black',
   textColor = 'black',
   onPress,
   type,
@@ -33,11 +33,13 @@ export default index;
 
 const styles = StyleSheet.create({
   container: backgroundColor => ({
-    backgroundColor: backgroundColor,
-    paddingVertical: 12,
-    borderRadius: 25,
-    width: 200,
-    alignSelf: 'center',
+    backgroundColor: '#796890',
+    borderRadius: 17,
+    width: 159,
+    height: 133,
+    marginLeft: 20,
+    marginRight: 20,
+    textAlign: 'center',
   }),
   label: textColor => ({
     textAlign: 'center',
