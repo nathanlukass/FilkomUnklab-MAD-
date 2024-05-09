@@ -1,7 +1,6 @@
 import SplashScreen from './SplashScreen';
 import SignWith from './SignWith';
-import Home from './Menu';
-import Profile from './Profile';
-import Statistics from './Statistics';
+import loginAdmin from './loginAdmin';
+import loginStudents from './loginStudents'
 
-export {SplashScreen, SignWith, Home, Profile, Statistics};
+export {SplashScreen, SignWith, loginAdmin, loginStudents};
