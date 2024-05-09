@@ -1,14 +1,35 @@
 import React from 'react';
-import {View, Text, StyleSheet, Image, ScrollView} from 'react-native';
+import {
+  View,
+  Text,
+  StyleSheet,
+  TouchableOpacity,
+  ScrollView,
+} from 'react-native';
 import {Gap} from '../../components';
+import {PageHeader} from '../../components/molecules';
 
-const ProfileScreen = () => {
+const ProfileScreen = ({navigation}) => {
   return (
     <ScrollView>
       <View style={styles.container}>
+        <PageHeader
+          label="Profile"
+          back={true}
+          onPress={() => navigation.goBack()}
+          type="default" // Add the 'type' prop with a default value
+        />
         <View style={styles.header}>
-          <Text style={styles.headerText}>Profile</Text>
-          <Gap height={210} />
+          <Gap height={10} />
+          <View style={styles.profileContainer}>
+            <View style={styles.profile}>
+              <View style={styles.addPhoto}>
+                <TouchableOpacity>
+                  <Text style={styles.addPhotoLabel}>Add Photo</Text>
+                </TouchableOpacity>
+              </View>
+            </View>
+          </View>
           <Text style={styles.name}>John, Doe</Text>
           <Text style={styles.department}>Informatics</Text>
         </View>
@@ -161,6 +182,36 @@ const styles = StyleSheet.create({
     paddingBottom: 15,
     flex: 1,
     alignItems: 'center',
+  },
+  profileContainer: {
+    marginTop: 26,
+    alignItems: 'center',
+  },
+  profile: {
+    backgroundColor: '#FFFFFF',
+    alignItems: 'center',
+    justifyContent: 'center',
+    height: 160,
+    width: 160,
+    borderRadius: 160 / 2,
+    borderWidth: 1,
+    borderColor: '#8D92A3',
+    borderStyle: 'dashed',
+  },
+  addPhoto: {
+    backgroundColor: '#000000',
+    width: 140,
+    height: 140,
+    borderRadius: 140 / 2,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  addPhotoLabel: {
+    fontFamily: 'Poppins-Light',
+    fontSize: 14,
+    width: 40,
+    textAlign: 'center',
+    color: '#8D92A3',
   },
 });
 
