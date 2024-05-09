@@ -1,7 +1,7 @@
 import {StyleSheet, View, ImageBackground} from 'react-native';
 import React, {useState} from 'react';
 import {Button, Gap} from '../../components/atoms';
-import {backGround} from '../../assets/images'; // Ubah sesuai dengan path gambar background Anda
+import {backGround} from '../../assets/images';
 
 const SignWith = ({navigation}) => {
   return (

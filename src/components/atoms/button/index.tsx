@@ -1,6 +1,6 @@
 import {StyleSheet, Text, TouchableOpacity} from 'react-native';
 import React from 'react';
-import {BackButton} from '../../../assets/icon';
+import {Exit, Notif, Profile, BackButton} from '../../../assets/icon';
 
 const index = ({
   label,
@@ -13,7 +13,10 @@ const index = ({
   if (type === 'icon-only') {
     return (
       <TouchableOpacity activeOpacity={0.7} onPress={onPress}>
+        {icon === 'icon-exit' && <Exit />}
+        {icon === 'icon-notif' && <Notif />}
         {icon === 'icon-back' && <BackButton />}
+        {icon === 'icon-profile' && <Profile />}
       </TouchableOpacity>
     );
   }

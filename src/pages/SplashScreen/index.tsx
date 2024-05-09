@@ -6,7 +6,6 @@ const SplashScreen = ({navigation}) => {
   useEffect(() => {
     setTimeout(() => navigation.replace('SignWith'), 3000);
   }, []);
-
   return (
     <View style={styles.container}>
       <Image source={LogoUk} style={styles.logo} />
