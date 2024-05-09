@@ -1,11 +1,18 @@
 import React from 'react';
 import {StyleSheet, Text, View, ScrollView, Image} from 'react-native';
 import {Button3, Gap} from '../../components/atoms';
+import {PageHeader} from '../../components';
 
 const Statistics = ({navigation}) => {
   return (
     <ScrollView style={styles.page}>
-      <Gap height={110} />
+      <PageHeader
+        label="Statistics"
+        backk={true}
+        onPress={() => navigation.goBack()}
+        type="default" // Add the 'type' prop with a default value
+      />
+      <Gap height={22} />
       <View style={styles.row}>
         <Button3
           label="Student Forum"

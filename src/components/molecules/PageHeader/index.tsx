@@ -1,12 +1,33 @@
-import {StyleSheet, Text, View, Image} from 'react-native';
+import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
-import {Button} from '../../atoms';
+import {Button4} from '../../../components/atoms';
 
-const PageHeader = ({label, backButton, onPress, type}) => {
+const PageHeader = ({label, exit, onPress, back, backk}) => {
   return (
     <View style={styles.container}>
-      {backButton && (
-        <Button type="icon-only" icon="icon-back" onPress={onPress} />
+      {exit && (
+        <Button4
+          type="icon-only"
+          icon="icon-exit"
+          onPress={onPress}
+          style={styles.button} // tambahkan ini
+        />
+      )}
+      {back && (
+        <Button4
+          type="icon-only"
+          icon="icon-back"
+          onPress={onPress}
+          style={styles.button} // tambahkan ini
+        />
+      )}
+      {backk && (
+        <Button4
+          type="icon-only"
+          icon="icon-back"
+          onPress={onPress}
+          style={styles.button} // tambahkan ini
+        />
       )}
       <Text style={styles.label}>{label}</Text>
     </View>
@@ -16,35 +37,22 @@ const PageHeader = ({label, backButton, onPress, type}) => {
 export default PageHeader;
 
 const styles = StyleSheet.create({
-  containerWithPhoto: {
-    backgroundColor: '#FFFFFF',
-    paddingHorizontal: 24,
-    paddingVertical: 37,
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-  },
   container: {
-    backgroundColor: '#FFFFFF',
-    paddingLeft: 24,
-    paddingVertical: 37,
+    backgroundColor: '#796890',
+    paddingLeft: 22,
+    paddingVertical: 23,
     flexDirection: 'row',
     alignItems: 'center',
   },
   label: {
-    fontFamily: 'Poppins-Medium',
-    fontSize: 22,
-    color: '#020202',
-    marginLeft: 26,
-  },
-  appTitle: {
-    fontFamily: 'Poppins-Medium',
-    fontSize: 22,
-    color: '#020202',
-  },
-  appSubTitle: {
     fontFamily: 'Poppins-Light',
-    fontSize: 14,
-    color: '#8D92A3',
+    fontSize: 20,
+    color: '#000000',
+    fontWeight: '200',
+    marginLeft: 130,
+  },
+  button: {
+    width: 10,
+    height: 10,
   },
 });

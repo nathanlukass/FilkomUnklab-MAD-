@@ -2,12 +2,17 @@ import React from 'react';
 import {StyleSheet, Text, View, ScrollView, Image} from 'react-native';
 import {Gap} from '../../components/atoms';
 import {Button2} from '../../components/atoms';
-import {PageHeader} from '../../components/molecules/PageHeader';
+import {PageHeader} from '../../components/molecules';
 
 const Home = ({navigation}) => {
   return (
     <ScrollView style={styles.page}>
-      <Gap height={150} />
+      <PageHeader
+        exit={true}
+        onPress={() => navigation.navigate('SignWith')}
+        type="default" // Add the 'type' prop with a default value
+      />
+      <Gap height={14} />
       <View style={styles.row}>
         <Button2
           label="Profile"
@@ -18,18 +23,18 @@ const Home = ({navigation}) => {
           onPress={() => navigation.navigate('SplashScreen')}
         />
       </View>
-      <Gap height={25} />
+      <Gap height={13} />
       <View style={styles.row}>
         <Button2
           label="Seatting Map"
-          onPress={() => navigation.navigate('SplashScreen')}
+          onPress={() => navigation.navigate('Statistics')}
         />
         <Button2
           label="Statistics"
           onPress={() => navigation.navigate('Statistics')}
         />
       </View>
-      <Gap height={25} />
+      <Gap height={13} />
       <View style={styles.row}>
         <Button2
           label="Forum Survey"
