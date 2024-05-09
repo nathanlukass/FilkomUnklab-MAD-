@@ -3,11 +3,11 @@ import React from 'react';
 import {
   Profile1,
   Attendance,
-  Seatting,
+  Seating,
   Statistic,
   Survey,
   Points,
-} from '../../../../src/assets';
+} from '../../../../src/assets/images';
 
 const Button2 = ({
   label,
@@ -28,8 +28,8 @@ const Button2 = ({
           <Image source={Attendance} style={styles.icon} />
         ) : null;
       case 'Seatting Map':
-        return Seatting ? (
-          <Image source={Seatting} style={{width: 35, height: 59}} />
+        return Seating ? (
+          <Image source={Seating} style={{width: 35, height: 59}} />
         ) : null;
       case 'Statistics':
         return Statistic ? (
@@ -38,7 +38,9 @@ const Button2 = ({
       case 'Forum Survey':
         return Survey ? <Image source={Survey} style={styles.icon} /> : null;
       case 'Points Claim':
-        return Points ? <Image source={Points} style={styles.icon} /> : null;
+        return Points ? (
+          <Image source={Points} style={{width: 69, height: 59}} />
+        ) : null;
       default:
         return null;
     }

@@ -30,6 +30,7 @@ const ProfileScreen = ({navigation}) => {
               </View>
             </View>
           </View>
+          <Gap height={35} />
           <Text style={styles.name}>John, Doe</Text>
           <Text style={styles.department}>Informatics</Text>
         </View>
@@ -120,69 +121,7 @@ const styles = StyleSheet.create({
     borderBottomColor: 'black',
     borderBottomWidth: 1,
   },
-  cashOn: {
-    flexDirection: 'row',
-  },
-  cashOnStyle1: {
-    fontSize: 14,
-    fontFamily: 'Poppins-Medium',
-    color: 'black',
-    paddingTop: 20,
-  },
-  cashOnMoney1: {
-    fontSize: 14,
-    fontFamily: 'Poppins-Medium',
-    color: 'black',
-    paddingTop: 20,
-    paddingLeft: 20,
-  },
-  cashOnStyle2: {
-    fontSize: 14,
-    fontFamily: 'Poppins-Medium',
-    color: 'black',
-    paddingTop: 11,
-  },
-  cashOnMoney2: {
-    fontSize: 14,
-    fontFamily: 'Poppins-Medium',
-    color: 'black',
-    paddingTop: 11,
-    paddingLeft: 20,
-  },
-  contentWrapper2: {
-    flex: 1,
-    marginTop: 24,
-    paddingHorizontal: 25,
-    backgroundColor: 'white',
-    paddingBottom: 72,
-  },
-  transactionText: {
-    fontSize: 16,
-    fontFamily: 'Poppins-Medium',
-    color: 'black',
-    paddingTop: 10.6,
-    marginBottom: 9,
-  },
-  contentWrapper3: {
-    flex: 2,
-    marginTop: 24,
-    paddingHorizontal: 25,
-    backgroundColor: 'white',
-    flexDirection: 'row',
-    justifyContent: 'center',
-  },
-  homeIcon: {
-    paddingTop: 15,
-    paddingBottom: 15,
-    flex: 1,
-    alignItems: 'center',
-  },
-  squareFrame: {
-    paddingTop: 15,
-    paddingBottom: 15,
-    flex: 1,
-    alignItems: 'center',
-  },
+
   profileContainer: {
     marginTop: 26,
     alignItems: 'center',

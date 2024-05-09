@@ -8,7 +8,7 @@ const Statistics = ({navigation}) => {
     <ScrollView style={styles.page}>
       <PageHeader
         label="Statistics"
-        backk={true}
+        back={true}
         onPress={() => navigation.goBack()}
         type="default" // Add the 'type' prop with a default value
       />

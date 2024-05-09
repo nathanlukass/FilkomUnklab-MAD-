@@ -5,7 +5,7 @@ import {Exit, Notif, Profile, BackButton} from '../../../assets/icon';
 const index = ({
   label,
   backgroundColor = 'white',
-  textColor = 'black',
+  textColor = 'white',
   onPress,
   type,
   icon,
@@ -33,16 +33,20 @@ export default index;
 
 const styles = StyleSheet.create({
   container: backgroundColor => ({
-    backgroundColor: backgroundColor,
+    backgroundColor: 'white',
+    borderWidth: 1,
+    borderColor: '#020202',
     paddingVertical: 12,
     borderRadius: 25,
-    width: 200,
+    width: 210,
+    height: 50,
     alignSelf: 'center',
   }),
   label: textColor => ({
     textAlign: 'center',
-    fontFamily: 'Poppins-Medium',
+    fontFamily: 'Poppins-Black',
     fontSize: 19,
-    color: textColor,
+    fontWeight: 'bold',
+    color: 'black',
   }),
 });

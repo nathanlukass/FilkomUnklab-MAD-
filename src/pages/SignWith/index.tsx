@@ -10,12 +10,12 @@ const SignWith = ({navigation}) => {
         <Gap height={500} />
         <Button
           label="Login Admin"
-          onPress={() => navigation.navigate('SplashScreen')}
+          onPress={() => navigation.navigate('LoginAdmin')}
         />
-        <Gap height={12} />
+        <Gap height={10} />
         <Button
           label="Login Student"
-          onPress={() => navigation.navigate('Home')}
+          onPress={() => navigation.navigate('LoginStudents')}
         />
       </View>
     </ImageBackground>

@@ -9,6 +9,7 @@ const Home = ({navigation}) => {
     <ScrollView style={styles.page}>
       <PageHeader
         exit={true}
+        notif={true}
         onPress={() => navigation.navigate('SignWith')}
         type="default" // Add the 'type' prop with a default value
       />
