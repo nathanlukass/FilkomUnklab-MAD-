@@ -10,6 +10,9 @@ import Exit from './Exit.png';
 import Back from './ProfileBack.png';
 import FILKOM from './FILKOM.png';
 import Notif from './Notif.png';
+import Kyboard from './keyboard.jpeg';
+import Mouse from './mousee.jpg';
+import MousePad from './mousepad.jpg';
 
 export {
   backGround,
@@ -23,4 +26,7 @@ export {
   Back,
   FILKOM,
   Notif,
+  Kyboard,
+  Mouse,
+  MousePad,
 };

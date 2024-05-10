@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
   label: textColor => ({
     textAlign: 'center',
     fontFamily: 'Poppins-Black',
-    fontSize: 19,
+    fontSize: 15,
     fontWeight: 'bold',
     color: 'black',
   }),

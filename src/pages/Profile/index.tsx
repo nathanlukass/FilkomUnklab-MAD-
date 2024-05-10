@@ -8,6 +8,7 @@ import {
 } from 'react-native';
 import {Gap} from '../../components';
 import {PageHeader} from '../../components/molecules';
+import {Mouse, MousePad, Kyboard} from '../../assets/images';
 
 const ProfileScreen = ({navigation}) => {
   return (

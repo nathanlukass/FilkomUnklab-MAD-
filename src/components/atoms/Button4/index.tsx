@@ -1,7 +1,6 @@
-// Di dalam komponen Button4
 import {StyleSheet, Text, TouchableOpacity, Image} from 'react-native';
 import React from 'react';
-import {Back, Exit} from '../../../assets';
+import {ProfileBack, Exit, Notif, Back} from '../../../assets';
 
 const Button4 = ({
   label,
@@ -10,13 +9,14 @@ const Button4 = ({
   onPress,
   type,
   icon,
-  imageStyle, // tambahkan properti ini
+  imageStyle,
 }) => {
   if (type === 'icon-only') {
     return (
       <TouchableOpacity activeOpacity={0.7} onPress={onPress}>
         {icon === 'icon-exit' && <Image source={Exit} style={imageStyle} />}
         {icon === 'icon-back' && <Image source={Back} style={imageStyle} />}
+        {icon === 'icon-notif' && <Image source={Notif} style={imageStyle} />}
       </TouchableOpacity>
     );
   }

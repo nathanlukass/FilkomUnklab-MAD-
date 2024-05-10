@@ -9,7 +9,6 @@ const Home = ({navigation}) => {
     <ScrollView style={styles.page}>
       <PageHeader
         exit={true}
-        notif={true}
         onPress={() => navigation.navigate('SignWith')}
         type="default" // Add the 'type' prop with a default value
       />
@@ -43,7 +42,7 @@ const Home = ({navigation}) => {
         />
         <Button2
           label="Points Claim"
-          onPress={() => navigation.navigate('SplashScreen')}
+          onPress={() => navigation.navigate('Points')}
         />
       </View>
     </ScrollView>
@@ -58,7 +57,7 @@ const styles = StyleSheet.create({
   },
   row: {
     flexDirection: 'row',
-    justifyContent: 'space-between',
+    justifyContent: 'center',
     marginHorizontal: 10,
     marginBottom: 25,
   },
