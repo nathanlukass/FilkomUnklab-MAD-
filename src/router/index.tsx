@@ -9,14 +9,12 @@ import {
   LoginAdmin,
   LoginStudents,
   Points,
-  SeatMap, 
-  StudentAtt, 
-  FillSurvey, 
-  StudentSurvey
-
+  SeatMap,
+  StudentAtt,
+  FillSurvey,
+  StudentSurvey,
 } from '../pages';
 import {Admin} from '../pagesAdmin';
-
 
 const Stack = createNativeStackNavigator();
 const index = () => {
@@ -67,17 +65,17 @@ const index = () => {
         component={Admin}
         options={{headerShown: false}}
       />
-       <Stack.Screen
+      <Stack.Screen
         name="SeatMap"
         component={SeatMap}
         options={{headerShown: false}}
       />
-       <Stack.Screen
+      <Stack.Screen
         name="FillSurvey"
         component={FillSurvey}
         options={{headerShown: false}}
       />
-       <Stack.Screen
+      <Stack.Screen
         name="StudentAtt"
         component={StudentAtt}
         options={{headerShown: false}}

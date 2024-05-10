@@ -1,6 +1,6 @@
 import {StyleSheet, View, Text, ImageBackground} from 'react-native';
 import React from 'react';
-import {Button, Buttonn, Gap} from '../../components/atoms';
+import {Buttonn, Gap} from '../../components/atoms';
 import {TextInput} from '../../components/molecules';
 import {backGround} from '../../assets/images';
 

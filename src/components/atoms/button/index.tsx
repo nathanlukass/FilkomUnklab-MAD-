@@ -52,7 +52,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     color: textColor, // Gunakan textColor dari props
     fontFamily: 'Poppins-Black',
-    fontSize: 22,
+    fontSize: 18,
     fontWeight: 'bold',
     color: 'black',
   }),
