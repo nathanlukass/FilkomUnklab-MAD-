@@ -32,6 +32,7 @@ label: {
   fontSize: 20,
   color: '#000000',
   marginLeft: 300,
+  alignItems: 'center',
   fontWeight: 'bold',
 },
 button: {

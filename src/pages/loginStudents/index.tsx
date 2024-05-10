@@ -41,7 +41,7 @@ const loginStudents = ({navigation}) => {
                label="Log In"
                backgroundColor="#8D92A3"
                textColor="#FFFFFF"
-               onPress={() => navigation.navigate('SplashScreen')}
+               onPress={() => navigation.navigate('StudentAtt')}
              />
                <Gap height={12} />
                <Button

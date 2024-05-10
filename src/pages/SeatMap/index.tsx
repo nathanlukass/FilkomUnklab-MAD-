@@ -19,7 +19,7 @@ const SeatMap = ({ navigation }) => {
             label=" Open PDF "
             backgroundColor="#796890"
             textColor="#FFFFFF"
-            onPress={() => navigation.navigate('Survey')}
+            onPress={() => navigation.navigate('StudentSurvey')}
           />
         <View style={styles.imageContainer}>
            <Image

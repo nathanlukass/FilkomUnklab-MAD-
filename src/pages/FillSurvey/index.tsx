@@ -1,15 +1,15 @@
 import {StyleSheet, View, ImageBackground, Text} from 'react-native';
 import React from 'react';
 import {Button, Gap,TextInput2} from '../../components';
-import {PageHeader2} from '../../components/molecul';
+import {PageHeader1} from '../../components/molecul';
 
 
-const Survey = ({navigation}) => {
+const FillSurvey = ({navigation}) => {
     return (    
         <View style={styles.container}>
-        <PageHeader2
-          label="Survey"
-          bback={true}
+        <PageHeader1
+          label="Fill Survey"
+          back={true}
           onPress={() => navigation.goBack()}
           type="default" 
         />       
@@ -28,13 +28,13 @@ const Survey = ({navigation}) => {
             label="Submit"
             backgroundColor="#8D92A3"
             textColor="#FFFFFF"
-            onPress={() => navigation.navigate('SignWith')}
+            onPress={() => navigation.navigate('StudentSurvey')}
             />
         </View>
     );
 };
 
-export default Survey;
+export default FillSurvey;
 
 const styles = StyleSheet.create({
   container: {
