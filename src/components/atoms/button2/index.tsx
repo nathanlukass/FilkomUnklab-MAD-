@@ -68,7 +68,7 @@ export default Button2;
 
 const styles = StyleSheet.create({
   container: backgroundColor => ({
-    backgroundColor: '#796890',
+    backgroundColor: '#F5CC0D',
     borderRadius: 17,
     width: 159,
     height: 133,

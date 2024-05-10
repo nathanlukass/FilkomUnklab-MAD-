@@ -4,7 +4,7 @@ import {BackButton} from '../../../assets/icon';
 
 const Button = ({
   label,
-  backgroundColor = 'white',
+  backgroundColor = '#F5CC0D',
   textColor = 'black', // Ubah warna teks menjadi hitam
   onPress,
   type,

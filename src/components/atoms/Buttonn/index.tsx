@@ -4,7 +4,7 @@ import {BackButton} from '../../../assets/icon';
 
 const Button = ({
   label,
-  backgroundColor = 'white',
+  backgroundColor = '#F5CC0D',
   textColor = 'white',
   onPress,
   type,
@@ -30,7 +30,7 @@ export default Button;
 
 const styles = StyleSheet.create({
   container: backgroundColor => ({
-    backgroundColor: 'white',
+    backgroundColor: '#F5CC0D',
     borderWidth: 1,
     borderColor: '#020202',
     paddingVertical: 12,

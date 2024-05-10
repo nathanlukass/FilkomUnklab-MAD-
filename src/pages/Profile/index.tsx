@@ -45,7 +45,7 @@ const ProfileScreen = ({navigation}) => {
           <Text style={styles.balance1}>s22123456@student.unklab.ac.id</Text>
           <View style={styles.line} />
           <Text style={styles.balance}>Forum Points</Text>
-          <Text style={styles.balance1}>100</Text>
+          <Text style={styles.balance1}>150</Text>
           <View style={styles.line} />
           <Text style={styles.balance}>Seat Number</Text>
           <Text style={styles.balance1}>B-10-5</Text>
@@ -93,7 +93,7 @@ const styles = StyleSheet.create({
     flex: 1,
     marginTop: 24,
     paddingHorizontal: 25,
-    backgroundColor: 'warm',
+    backgroundColor: '',
   },
   balance: {
     fontSize: 20,

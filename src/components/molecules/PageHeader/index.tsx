@@ -46,7 +46,7 @@ export default PageHeader;
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#796890',
+    backgroundColor: '#F5CC0D',
     paddingLeft: 22,
     paddingVertical: 23,
     flexDirection: 'row',
