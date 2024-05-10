@@ -56,8 +56,7 @@ const styles = StyleSheet.create({
     fontFamily: 'Poppins-Light',
     fontSize: 20,
     color: '#000000',
-    fontWeight: '200',
-    marginLeft: 270,
+    marginLeft: 135,
     fontWeight: 'bold',
   },
   button: {

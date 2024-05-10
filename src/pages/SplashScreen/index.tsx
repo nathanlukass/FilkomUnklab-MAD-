@@ -1,14 +1,14 @@
-import {StyleSheet, View, Image, Text} from 'react-native';
+import {StyleSheet, Text, View, Image} from 'react-native';
 import React, {useEffect} from 'react';
-import {Filkom} from '../../assets/images';
+import {FILKOM} from '../../assets/images';
 
 const SplashScreen = ({navigation}) => {
   useEffect(() => {
-    setTimeout(() => navigation.replace('SignWith'), 100000);
+    setTimeout(() => navigation.replace('SignWith'), 3000);
   }, []);
   return (
     <View style={styles.container}>
-      <Image source={Filkom} style={styles.logo} />
+      <Image source={FILKOM} style={styles.logo} />
       <Text style={styles.text}>FAKULTAS ILMU KOMPUTER</Text>
     </View>
   );
@@ -18,17 +18,17 @@ export default SplashScreen;
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '',
+    backgroundColor: 'black',
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
   },
   logo: {
-    width: 300, // ubah sesuai kebutuhan
-    height: 300, // ubah sesuai kebutuhan
+    width: 350, // ubah sesuai kebutuhan
+    height: 350, // ubah sesuai kebutuhan
   },
   text: {
-    color: 'red',
+    color: 'blue',
     fontWeight: 'bold',
     fontSize: 25,
   },

@@ -29,7 +29,7 @@ const Button2 = ({
         ) : null;
       case 'Seatting Map':
         return Seating ? (
-          <Image source={Seating} style={{width: 35, height: 59}} />
+          <Image source={Seating} style={{width: 37, height: 60}} />
         ) : null;
       case 'Statistics':
         return Statistic ? (

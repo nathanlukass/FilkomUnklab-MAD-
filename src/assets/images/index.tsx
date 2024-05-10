@@ -8,9 +8,10 @@ import Survey from './Survey.png';
 import Points from './Points.png';
 import Exit from './Exit.png';
 import Back from './ProfileBack.png';
+import FILKOM from './FILKOM.png';
+import Notif from './Notif.png';
 
 export {
-  LogoUk,
   backGround,
   Profile1,
   Attendance,
@@ -20,4 +21,6 @@ export {
   Points,
   Exit,
   Back,
+  FILKOM,
+  Notif,
 };
