@@ -1,4 +1,4 @@
-import {StyleSheet, Text, View, Image} from 'react-native';
+import {StyleSheet, View, Image} from 'react-native';
 import React, {useEffect} from 'react';
 import {LogoUk} from '../../assets/images';
 
@@ -18,7 +18,7 @@ export default SplashScreen;
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: 'white',
+    backgroundColor: '#796890',
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',

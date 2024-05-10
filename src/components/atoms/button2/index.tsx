@@ -30,12 +30,12 @@ export default index;
 
 const styles = StyleSheet.create({
   container: backgroundColor => ({
-    backgroundColor: 'white',
+    backgroundColor: '#796890',
     borderWidth: 1,
-    borderColor: '#020202',
+    borderColor: 'white',
     paddingVertical: 12,
-    borderRadius: 25,
-    width: 210,
+    borderRadius: 5,
+    width: 400,
     height: 50,
     alignSelf: 'center',
   }),
@@ -43,7 +43,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     fontFamily: 'Poppins-Black',
     fontSize: 22,
-    fontWeight: 'bold',
-    color: 'black',
+    fontWeight: '',
+    color: 'white',
   }),
 });
