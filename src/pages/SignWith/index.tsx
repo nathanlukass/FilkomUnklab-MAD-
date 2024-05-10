@@ -7,15 +7,15 @@ const SignWith = ({navigation}) => {
   return (
     <ImageBackground source={backGround} style={styles.backgroundImage}>
       <View style={styles.container}>
-        <Gap height={500} />
+        <Gap height={380} />
         <Button
-          label="Login Admin"
-          onPress={() => navigation.navigate('loginAdmin')}
+          label="L o g i n  Admin"
+          onPress={() => navigation.navigate('LoginAdmin')}
         />
-        <Gap height={10} />
+        <Gap height={6} />
         <Button
-          label="Login Student"
-          onPress={() => navigation.navigate('loginStudents')}
+          label="L o g i n  Students"
+          onPress={() => navigation.navigate('LoginStudents')}
         />
       </View>
     </ImageBackground>
@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
-    alignItems: 'center',
+    alignItems: 'baseline',
   },
   backgroundImage: {
     flex: 1,
