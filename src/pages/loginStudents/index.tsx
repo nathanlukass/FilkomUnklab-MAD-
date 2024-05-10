@@ -36,15 +36,15 @@ const LoginStudents = ({navigation}) => {
         <Gap height={20} />
         <Buttonn
           label="Log In"
-          backgroundColor="#8D92A3"
-          textColor="#FFFFFF"
+          backgroundColor="#F5CC0D"
+          textColor="#F5CC0D"
           onPress={() => navigation.navigate('Home')}
         />
         <Gap height={12} />
         <Buttonn
           label="Back"
-          backgroundColor="#8D92A3"
-          textColor="#FFFFFF"
+          backgroundColor="#F5CC0D"
+          textColor="#F5CC0D"
           onPress={() => navigation.navigate('SignWith')}
         />
       </View>

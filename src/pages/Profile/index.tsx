@@ -8,7 +8,6 @@ import {
 } from 'react-native';
 import {Gap} from '../../components';
 import {PageHeader} from '../../components/molecules';
-import {Mouse, MousePad, Kyboard} from '../../assets/images';
 
 const ProfileScreen = ({navigation}) => {
   return (
@@ -63,7 +62,7 @@ const styles = StyleSheet.create({
     height: 1000,
   },
   header: {
-    backgroundColor: '#796890',
+    backgroundColor: '#F5CC0D',
     height: 333,
     alignItems: 'center',
     borderBottomEndRadius: 30,
@@ -94,7 +93,7 @@ const styles = StyleSheet.create({
     flex: 1,
     marginTop: 24,
     paddingHorizontal: 25,
-    backgroundColor: 'white',
+    backgroundColor: 'warm',
   },
   balance: {
     fontSize: 20,
@@ -111,18 +110,10 @@ const styles = StyleSheet.create({
     paddingBottom: 2, // reduced padding
     fontWeight: 'bold',
   },
-  balanceMoney: {
-    fontSize: 24,
-    fontFamily: 'Poppins-Medium',
-    color: 'black',
-    textAlign: 'center',
-    marginBottom: 18,
-  },
   line: {
     borderBottomColor: 'black',
     borderBottomWidth: 1,
   },
-
   profileContainer: {
     marginTop: 26,
     alignItems: 'center',
@@ -151,7 +142,7 @@ const styles = StyleSheet.create({
     fontSize: 14,
     width: 40,
     textAlign: 'center',
-    color: '#8D92A3',
+    color: '#F5CC0D',
   },
 });
 
