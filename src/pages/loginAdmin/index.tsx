@@ -38,7 +38,7 @@ const LoginStudents = ({navigation}) => {
           label="L o g   I n"
           backgroundColor="#8D92A3"
           textColor="#FFFFFF"
-          onPress={() => navigation.navigate('Home')}
+          onPress={() => navigation.navigate('Admin')}
         />
         <Gap height={12} />
         <Buttonn
