@@ -1,10 +1,10 @@
-import {StyleSheet, View, ImageBackground, Text} from 'react-native';
+import {StyleSheet, View, Text, ImageBackground} from 'react-native';
 import React from 'react';
 import {Button, Buttonn, Gap} from '../../components/atoms';
 import {TextInput} from '../../components/molecules';
 import {backGround} from '../../assets/images';
 
-const LoginAdmin = ({navigation}) => {
+const LoginStudents = ({navigation}) => {
   return (
     <ImageBackground source={backGround} style={styles.backgroundImage}>
       <Text
@@ -31,20 +31,18 @@ const LoginAdmin = ({navigation}) => {
           }}>
           FILKOM UNKLAB
         </Text>
-        <Gap height={5} />
-        <TextInput label="" placeholder="  email" />
-        <Gap height={0} />
-        <TextInput label="" placeholder="  password" />
-        <Gap height={35} />
+        <TextInput label1="" placeholder="  password" value="email" />
+        <TextInput label1="" placeholder="  password" value="email" />
+        <Gap height={20} />
         <Buttonn
-          label="Log In"
+          label="L o g   I n"
           backgroundColor="#8D92A3"
           textColor="#FFFFFF"
           onPress={() => navigation.navigate('Home')}
         />
         <Gap height={12} />
         <Buttonn
-          label="Back"
+          label="B a c k"
           backgroundColor="#8D92A3"
           textColor="#FFFFFF"
           onPress={() => navigation.navigate('SignWith')}
@@ -54,15 +52,15 @@ const LoginAdmin = ({navigation}) => {
   );
 };
 
-export default LoginAdmin;
+export default LoginStudents;
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
   },
   contentWrapper: {
-    marginTop: 250,
-    marginLeft: 50,
+    marginTop: 185,
+    marginLeft: 30,
     paddingHorizontal: 30,
     borderRadius: 30,
     width: 350,

@@ -8,6 +8,7 @@ import {
   Statistics,
   LoginAdmin,
   LoginStudents,
+  Points,
 } from '../pages';
 
 const Stack = createNativeStackNavigator();
@@ -47,6 +48,11 @@ const index = () => {
       <Stack.Screen
         name="Statistics"
         component={Statistics}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="Points"
+        component={Points}
         options={{headerShown: false}}
       />
     </Stack.Navigator>
