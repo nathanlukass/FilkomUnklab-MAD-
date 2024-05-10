@@ -33,10 +33,15 @@ const styles = StyleSheet.create({
     backgroundColor: backgroundColor, // Gunakan backgroundColor dari props
     borderWidth: 1,
     borderColor: '#020202',
+    backgroundColor: 'white',
+    borderWidth: 1,
+    borderColor: '#020202',
     paddingVertical: 12,
     borderRadius: 25,
     width: 203,
     height: 45,
+    width: 210,
+    height: 50,
     alignSelf: 'center',
   }),
   label: textColor => ({
@@ -46,5 +51,9 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     justifyContent: 'center',
     color: textColor, // Gunakan textColor dari props
+    fontFamily: 'Poppins-Black',
+    fontSize: 22,
+    fontWeight: 'bold',
+    color: 'black',
   }),
 });
