@@ -10,6 +10,7 @@ import {
   LoginStudents,
   Points,
 } from '../pages';
+import {Admin} from '../pagesAdmin';
 
 const Stack = createNativeStackNavigator();
 const index = () => {
@@ -53,6 +54,11 @@ const index = () => {
       <Stack.Screen
         name="Points"
         component={Points}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="Admin"
+        component={Admin}
         options={{headerShown: false}}
       />
     </Stack.Navigator>
