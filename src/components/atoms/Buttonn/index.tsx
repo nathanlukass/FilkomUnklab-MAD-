@@ -1,11 +1,11 @@
 import {StyleSheet, Text, TouchableOpacity} from 'react-native';
-import {React, useState} from 'react';
+import React from 'react';
 import {BackButton} from '../../../assets/icon';
 
 const Button = ({
   label,
   backgroundColor = 'white',
-  textColor = 'black', // Ubah warna teks menjadi hitam
+  textColor = 'white',
   onPress,
   type,
   icon,
@@ -30,29 +30,19 @@ export default Button;
 
 const styles = StyleSheet.create({
   container: backgroundColor => ({
-    backgroundColor: backgroundColor, // Gunakan backgroundColor dari props
-    borderWidth: 1,
-    borderColor: '#020202',
     backgroundColor: 'white',
     borderWidth: 1,
     borderColor: '#020202',
     paddingVertical: 12,
     borderRadius: 25,
-    width: 203,
-    height: 45,
     width: 210,
-    height: 50,
+    height: 45,
     alignSelf: 'center',
   }),
   label: textColor => ({
     textAlign: 'center',
-    fontFamily: 'Poppins-Medium',
-    fontSize: 15,
-    fontWeight: 'bold',
-    justifyContent: 'center',
-    color: textColor, // Gunakan textColor dari props
     fontFamily: 'Poppins-Black',
-    fontSize: 22,
+    fontSize: 15,
     fontWeight: 'bold',
     color: 'black',
   }),

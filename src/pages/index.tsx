@@ -1,10 +1,26 @@
 import SplashScreen from './SplashScreen';
 import SignWith from './SignWith';
-import loginAdmin from './loginAdmin';
-import loginStudents from './loginStudents';
+import LoginAdmin from './LoginAdmin';
+import LoginStudents from './LoginStudents';
+import Profile from './Profile';
+import Statistics from './Statistics';
+import Home from './Menu';
+import Points from './Points';
 import SeatMap from './SeatMap';
 import FillSurvey from './FillSurvey';
 import StudentAtt from './StudentAtt';
 import StudentSurvey from './StudentSurvey';
 
-export {SplashScreen, SignWith, loginAdmin, loginStudents, SeatMap, FillSurvey, StudentAtt, StudentSurvey};
+export {
+  LoginAdmin,
+  LoginStudents,
+  Profile,
+  Statistics,
+  Home,
+  Points,
+  SplashScreen, 
+  SignWith, 
+  SeatMap, 
+  FillSurvey, 
+  StudentAtt, 
+  StudentSurvey};

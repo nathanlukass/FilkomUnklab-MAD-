@@ -1,6 +1,22 @@
 import React from 'react';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import {SplashScreen, SignWith, loginAdmin, loginStudents, SeatMap, Survey, StudentAtt, FillSurvey, StudentSurvey} from '../pages';
+import {
+  SplashScreen,
+  SignWith,
+  Home,
+  Profile,
+  Statistics,
+  LoginAdmin,
+  LoginStudents,
+  Points,
+  SeatMap, 
+  StudentAtt, 
+  FillSurvey, 
+  StudentSurvey
+
+} from '../pages';
+import {Admin} from '../pagesAdmin';
+
 
 const Stack = createNativeStackNavigator();
 const index = () => {
@@ -17,13 +33,38 @@ const index = () => {
         options={{headerShown: false}}
       />
       <Stack.Screen
-        name="loginAdmin"
-        component={loginAdmin}
+        name="LoginAdmin"
+        component={LoginAdmin}
         options={{headerShown: false}}
       />
       <Stack.Screen
-        name="loginStudents"
-        component={loginStudents}
+        name="LoginStudents"
+        component={LoginStudents}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="Home"
+        component={Home}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="Profile"
+        component={Profile}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="Statistics"
+        component={Statistics}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="Points"
+        component={Points}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="Admin"
+        component={Admin}
         options={{headerShown: false}}
       />
        <Stack.Screen
