@@ -1,5 +1,5 @@
-import {StyleSheet, View, Image} from 'react-native';
-import React, {useEffect} from 'react';
+import {StyleSheet, View, Image, Text} from 'react-native';
+import {React, useEffect} from 'react';
 import {FILKOM} from '../../assets/images';
 
 const SplashScreen = ({navigation}) => {

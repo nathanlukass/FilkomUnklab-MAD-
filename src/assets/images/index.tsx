@@ -1,10 +1,5 @@
 import LogoUk from './UKK1.png';
-<<<<<<< HEAD
-import backGround from './bg2.png';
-import Back from './Back.png';
-
-export {LogoUk, backGround, Back};
-=======
+import Back1 from './Back.png';
 import backGround from './bg.jpg';
 import Profile1 from './Profile.png';
 import Attendance from './Attendance.png';
@@ -19,6 +14,7 @@ import Notif from './Notif.png';
 import Kyboard from './keyboard.jpeg';
 import Mouse from './mousee.jpg';
 import MousePad from './mousepad.jpg';
+import Profilee from './Profilee.png';
 
 export {
   backGround,
@@ -29,11 +25,13 @@ export {
   Survey,
   Points,
   Exit,
-  Back,
+  Back1,
   FILKOM,
   Notif,
   Kyboard,
   Mouse,
   MousePad,
+  LogoUk,
+  Back,
+  Profilee,
 };
->>>>>>> 384c19da9d824458540cd0a37edeaf2898bd947a

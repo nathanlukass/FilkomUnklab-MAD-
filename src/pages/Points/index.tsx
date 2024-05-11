@@ -12,7 +12,7 @@ const Points = ({navigation}) => {
       <PageHeader
         label="Points Claim"
         back={true}
-        onPress={() => navigation.navigate('SignWith')}
+        onPress={() => navigation.navigate('Home')}
         type="default"
       />
       <Gap height={15} />

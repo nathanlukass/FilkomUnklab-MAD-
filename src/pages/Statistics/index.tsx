@@ -20,7 +20,7 @@ const Statistics = ({navigation}) => {
           label2="P R E S E N T"
           status="Present"
           backgroundColor="black"
-          textColor="white"
+          textColor="black"
         />
       </View>
       <Gap height={15} />
@@ -31,7 +31,7 @@ const Statistics = ({navigation}) => {
           label2="P R E S E N T"
           status="Present"
           backgroundColor="black"
-          textColor="white"
+          textColor="black"
         />
       </View>
       <Gap height={15} />
@@ -42,7 +42,7 @@ const Statistics = ({navigation}) => {
           label2="L A T E"
           status="Late"
           backgroundColor="black"
-          textColor="white"
+          textColor="black"
         />
       </View>
       <Gap height={15} />
@@ -53,7 +53,7 @@ const Statistics = ({navigation}) => {
           label2="L A T E"
           status="Late"
           backgroundColor="black"
-          textColor="white"
+          textColor="black"
         />
       </View>
       <Gap height={15} />
@@ -64,7 +64,7 @@ const Statistics = ({navigation}) => {
           label2="P R E S E N T"
           status="Present"
           backgroundColor="black"
-          textColor="white"
+          textColor="black"
         />
       </View>
       <Gap height={15} />
@@ -75,7 +75,7 @@ const Statistics = ({navigation}) => {
           label2="P R E S E N T"
           status="Present"
           backgroundColor="black"
-          textColor="white"
+          textColor="black"
         />
       </View>
       <Gap height={15} />
@@ -86,7 +86,7 @@ const Statistics = ({navigation}) => {
           label2="A B S E N T"
           status="Absent"
           backgroundColor="black"
-          textColor="white"
+          textColor="black"
         />
       </View>
       <Gap height={15} />
@@ -97,7 +97,7 @@ const Statistics = ({navigation}) => {
           label2="A B S E N T"
           status="Absent"
           backgroundColor="black"
-          textColor="white"
+          textColor="black"
         />
       </View>
     </ScrollView>

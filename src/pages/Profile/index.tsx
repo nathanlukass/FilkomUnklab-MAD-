@@ -5,10 +5,11 @@ import {
   StyleSheet,
   TouchableOpacity,
   ScrollView,
+  Image,
 } from 'react-native';
 import {Gap} from '../../components';
 import {PageHeader} from '../../components/molecules';
-import {Mouse, MousePad, Kyboard} from '../../assets/images';
+import {Profilee} from '../../assets';
 
 const ProfileScreen = ({navigation}) => {
   return (
@@ -26,12 +27,12 @@ const ProfileScreen = ({navigation}) => {
             <View style={styles.profile}>
               <View style={styles.addPhoto}>
                 <TouchableOpacity>
-                  <Text style={styles.addPhotoLabel}>Add Photo</Text>
+                  <Image source={Profilee} style={styles.avatar} />
                 </TouchableOpacity>
               </View>
             </View>
           </View>
-          <Gap height={35} />
+          <Gap height={23} />
           <Text style={styles.name}>John, Doe</Text>
           <Text style={styles.department}>Informatics</Text>
         </View>
@@ -46,7 +47,7 @@ const ProfileScreen = ({navigation}) => {
           <Text style={styles.balance1}>s22123456@student.unklab.ac.id</Text>
           <View style={styles.line} />
           <Text style={styles.balance}>Forum Points</Text>
-          <Text style={styles.balance1}>100</Text>
+          <Text style={styles.balance1}>150</Text>
           <View style={styles.line} />
           <Text style={styles.balance}>Seat Number</Text>
           <Text style={styles.balance1}>B-10-5</Text>
@@ -63,14 +64,14 @@ const styles = StyleSheet.create({
     height: 1000,
   },
   header: {
-    backgroundColor: '#796890',
+    backgroundColor: '#F5CC0D',
     height: 333,
     alignItems: 'center',
     borderBottomEndRadius: 30,
     borderBottomStartRadius: 30,
   },
   headerText: {
-    color: '#000000',
+    color: '#fff',
     fontSize: 20,
   },
   profileInfo: {
@@ -82,19 +83,19 @@ const styles = StyleSheet.create({
     borderRadius: 50,
   },
   name: {
-    fontSize: 24,
+    fontSize: 28,
     fontWeight: 'bold',
     color: 'black',
   },
   department: {
-    fontSize: 18,
+    fontSize: 22,
     color: 'black',
   },
   contentWrapper1: {
     flex: 1,
     marginTop: 24,
     paddingHorizontal: 25,
-    backgroundColor: 'white',
+    backgroundColor: '',
   },
   balance: {
     fontSize: 20,
@@ -111,18 +112,10 @@ const styles = StyleSheet.create({
     paddingBottom: 2, // reduced padding
     fontWeight: 'bold',
   },
-  balanceMoney: {
-    fontSize: 24,
-    fontFamily: 'Poppins-Medium',
-    color: 'black',
-    textAlign: 'center',
-    marginBottom: 18,
-  },
   line: {
     borderBottomColor: 'black',
     borderBottomWidth: 1,
   },
-
   profileContainer: {
     marginTop: 26,
     alignItems: 'center',
@@ -131,18 +124,23 @@ const styles = StyleSheet.create({
     backgroundColor: '#FFFFFF',
     alignItems: 'center',
     justifyContent: 'center',
-    height: 160,
-    width: 160,
-    borderRadius: 160 / 2,
+    height: 180,
+    width: 180,
+    borderRadius: 180 / 2,
     borderWidth: 1,
     borderColor: '#8D92A3',
     borderStyle: 'dashed',
   },
+  avatar: {
+    height: 154,
+    width: 154,
+    borderRadius: 90 / 2,
+  },
   addPhoto: {
-    backgroundColor: '#000000',
-    width: 140,
-    height: 140,
-    borderRadius: 140 / 2,
+    backgroundColor: '#fff',
+    width: 110,
+    height: 110,
+    borderRadius: 100 / 2,
     justifyContent: 'center',
     alignItems: 'center',
   },
@@ -151,7 +149,7 @@ const styles = StyleSheet.create({
     fontSize: 14,
     width: 40,
     textAlign: 'center',
-    color: '#8D92A3',
+    color: '#F5CC0D',
   },
 });
 

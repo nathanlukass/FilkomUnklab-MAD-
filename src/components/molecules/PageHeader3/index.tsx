@@ -46,7 +46,6 @@ export default PageHeader;
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#F5CC0D',
     paddingLeft: 22,
     paddingVertical: 23,
     flexDirection: 'row',
@@ -55,8 +54,8 @@ const styles = StyleSheet.create({
   label: {
     fontFamily: 'Poppins-Light',
     fontSize: 20,
-    color: '#000000',
-    marginLeft: 135,
+    color: '#fff',
+    marginLeft: 130,
     fontWeight: 'bold',
   },
   button: {

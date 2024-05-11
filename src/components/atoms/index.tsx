@@ -6,4 +6,18 @@ import Buttonn from './Buttonn';
 import Button5 from './Button5';
 import Button1 from './button1';
 import Button3 from './button3';
-export {Button, Button2, Gap, Button3, Button4, Buttonn, Button5, Button1};
+import Button6 from './button6';
+import Button7 from './button7';
+
+export {
+  Button,
+  Button2,
+  Gap,
+  Button3,
+  Button4,
+  Buttonn,
+  Button5,
+  Button1,
+  Button6,
+  Button7,
+};

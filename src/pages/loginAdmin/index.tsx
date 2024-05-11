@@ -1,25 +1,21 @@
 import {StyleSheet, View, Text, ImageBackground} from 'react-native';
 import React from 'react';
-import {Button, Buttonn, Gap} from '../../components/atoms';
-import {TextInput} from '../../components/molecules';
+import {Buttonn, Gap} from '../../components/atoms';
+import {PageHeader3, TextInput2} from '../../components/molecules';
 import {backGround} from '../../assets/images';
+import {PageHeader} from '../../components/molecules';
 
-const LoginStudents = ({navigation}) => {
+const LoginAdmin = ({navigation}) => {
   return (
     <ImageBackground source={backGround} style={styles.backgroundImage}>
-      <Text
-        style={{
-          fontSize: 25,
-          textAlign: 'center',
-          fontFamily: 'Poppins-Black',
-          fontWeight: '',
-          color: 'white',
-          marginTop: 30,
-        }}>
-        Admin
-      </Text>
+      <PageHeader3
+        label="Admin"
+        back={true}
+        onPress={() => navigation.navigate('SignWith')}
+        type="default"
+      />
       <View style={styles.contentWrapper}>
-        <Gap height={30} />
+        <Gap height={15} />
         <Text
           style={{
             fontSize: 30,
@@ -27,32 +23,49 @@ const LoginStudents = ({navigation}) => {
             fontFamily: 'Poppins-Black',
             fontWeight: 'bold',
             color: '#333',
-            marginTop: 5,
+            marginTop: 0,
           }}>
           FILKOM UNKLAB
         </Text>
-        <TextInput label1="" placeholder="  password" value="email" />
-        <TextInput label1="" placeholder="  password" value="email" />
-        <Gap height={20} />
+        <Gap height={25} />
+        <TextInput2
+          label="Email"
+          placeholder="enter your email"
+          placeholderTextColor="#000000"
+        />
+        <Gap height={10} />
+        <TextInput2
+          label="Password"
+          placeholder="enter your password"
+          placeholderTextColor="#000000"
+        />
+        <Gap height={25} />
         <Buttonn
-          label="L o g   I n"
-          backgroundColor="#8D92A3"
-          textColor="#FFFFFF"
-          onPress={() => navigation.navigate('Admin')}
+          label="Log In"
+          backgroundColor="#F5CC0D"
+          textColor="#F5CC0D"
+          onPress={() => navigation.navigate('Home')}
+        />
+        <Gap height={15} />
+        <Buttonn
+          label="Back"
+          backgroundColor="#F5CC0D"
+          textColor="#F5CC0D"
+          onPress={() => navigation.navigate('SignWith')}
         />
         <Gap height={12} />
         <Buttonn
-          label="B a c k"
-          backgroundColor="#8D92A3"
-          textColor="#FFFFFF"
-          onPress={() => navigation.navigate('SignWith')}
+          label="Sign Up"
+          backgroundColor="#F5CC0D"
+          textColor="#F5CC0D"
+          onPress={() => navigation.navigate('SignUp')}
         />
       </View>
     </ImageBackground>
   );
 };
 
-export default LoginStudents;
+export default LoginAdmin;
 
 const styles = StyleSheet.create({
   container: {

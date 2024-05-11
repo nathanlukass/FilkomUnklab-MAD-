@@ -18,9 +18,10 @@ export {
   Statistics,
   Home,
   Points,
-  SplashScreen, 
-  SignWith, 
-  SeatMap, 
-  FillSurvey, 
-  StudentAtt, 
-  StudentSurvey};
+  SplashScreen,
+  SignWith,
+  SeatMap,
+  FillSurvey,
+  StudentAtt,
+  StudentSurvey,
+};

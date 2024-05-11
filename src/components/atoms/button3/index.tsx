@@ -8,13 +8,13 @@ const Button3 = ({
   label2,
   status = 'Present', // tambahkan status sebagai prop dengan default 'Present'
   backgroundColor = 'black',
-  textColor = 'white',
+  textColor = 'black',
 }) => {
   // fungsi untuk mendapatkan warna berdasarkan status
   const getStatusColor = status => {
     switch (status) {
       case 'Late':
-        return '#E0D92C';
+        return '#FFFFFF';
       case 'Absent':
         return '#DA1A1A';
       case 'Present':
@@ -37,7 +37,7 @@ export default Button3;
 
 const styles = StyleSheet.create({
   container: backgroundColor => ({
-    backgroundColor: '#796890',
+    backgroundColor: '#F5CC0D',
     borderRadius: 17,
     width: 331,
     height: 120,
@@ -65,55 +65,5 @@ const styles = StyleSheet.create({
     color: textColor, // warna teks sekarang dinamis berdasarkan status
     marginTop: 11,
     fontWeight: 'bold',
-  }),
-});
-
-import {StyleSheet, Text, TouchableOpacity} from 'react-native';
-import React from 'react';
-import {BackButton} from '../../../assets/icon';
-
-const index = ({
-  label,
-  backgroundColor = 'white',
-  textColor = 'white',
-  onPress,
-  type,
-  icon,
-}) => {
-  if (type === 'icon-only') {
-    return (
-      <TouchableOpacity activeOpacity={0.7} onPress={onPress}>
-        {icon === 'icon-back' && <BackButton />}
-      </TouchableOpacity>
-    );
-  }
-  return (
-    <TouchableOpacity
-      style={styles.container(backgroundColor)}
-      activeOpacity={0.7}
-      onPress={onPress}>
-      <Text style={styles.label(textColor)}>{label}</Text>
-    </TouchableOpacity>
-  );
-};
-export default index;
-
-const styles = StyleSheet.create({
-  container: backgroundColor => ({
-    backgroundColor: 'white',
-    borderWidth: 1,
-    borderColor: '#020202',
-    paddingVertical: 12,
-    borderRadius: 25,
-    width: 100,
-    height: 50,
-    alignSelf: 'center',
-  }),
-  label: textColor => ({
-    textAlign: 'center',
-    fontFamily: 'Poppins-Black',
-    fontSize: 22,
-    fontWeight: 'bold',
-    color: 'black',
   }),
 });

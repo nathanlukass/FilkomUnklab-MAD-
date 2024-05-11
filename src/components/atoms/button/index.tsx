@@ -4,7 +4,7 @@ import {BackButton} from '../../../assets/icon';
 
 const Button = ({
   label,
-  backgroundColor = 'white',
+  backgroundColor = '#F5CC0D',
   textColor = 'black', // Ubah warna teks menjadi hitam
   onPress,
   type,
@@ -31,15 +31,10 @@ export default Button;
 const styles = StyleSheet.create({
   container: backgroundColor => ({
     backgroundColor: backgroundColor, // Gunakan backgroundColor dari props
-    borderWidth: 1,
-    borderColor: '#020202',
-    backgroundColor: 'white',
-    borderWidth: 1,
+    borderWidth: 2,
     borderColor: '#020202',
     paddingVertical: 12,
     borderRadius: 25,
-    width: 203,
-    height: 45,
     width: 210,
     height: 50,
     alignSelf: 'center',
@@ -52,7 +47,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     color: textColor, // Gunakan textColor dari props
     fontFamily: 'Poppins-Black',
-    fontSize: 22,
+    fontSize: 18,
     fontWeight: 'bold',
     color: 'black',
   }),

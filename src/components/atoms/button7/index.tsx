@@ -2,9 +2,9 @@ import {StyleSheet, Text, TouchableOpacity} from 'react-native';
 import React from 'react';
 import {BackButton} from '../../../assets/icon';
 
-const Button = ({
+const index = ({
   label,
-  backgroundColor = '#F5CC0D',
+  backgroundColor = 'white',
   textColor = 'white',
   onPress,
   type,
@@ -26,23 +26,22 @@ const Button = ({
     </TouchableOpacity>
   );
 };
-export default Button;
+export default index;
 
 const styles = StyleSheet.create({
   container: backgroundColor => ({
-    backgroundColor: '#F5CC0D',
+    backgroundColor: 'white',
     borderWidth: 1,
     borderColor: '#020202',
-    paddingVertical: 12,
-    borderRadius: 25,
-    width: 210,
-    height: 45,
+    borderRadius: 10,
+    width: 70,
+    height: 30,
     alignSelf: 'center',
   }),
   label: textColor => ({
     textAlign: 'center',
     fontFamily: 'Poppins-Black',
-    fontSize: 15,
+    fontSize: 20,
     fontWeight: 'bold',
     color: 'black',
   }),
