@@ -5,9 +5,11 @@ import {
   StyleSheet,
   TouchableOpacity,
   ScrollView,
+  Image,
 } from 'react-native';
 import {Gap} from '../../components';
 import {PageHeader} from '../../components/molecules';
+import {Profilee} from '../../assets';
 
 const ProfileScreen = ({navigation}) => {
   return (
@@ -25,12 +27,12 @@ const ProfileScreen = ({navigation}) => {
             <View style={styles.profile}>
               <View style={styles.addPhoto}>
                 <TouchableOpacity>
-                  <Text style={styles.addPhotoLabel}>Add Photo</Text>
+                  <Image source={Profilee} style={styles.avatar} />
                 </TouchableOpacity>
               </View>
             </View>
           </View>
-          <Gap height={35} />
+          <Gap height={23} />
           <Text style={styles.name}>John, Doe</Text>
           <Text style={styles.department}>Informatics</Text>
         </View>
@@ -69,7 +71,7 @@ const styles = StyleSheet.create({
     borderBottomStartRadius: 30,
   },
   headerText: {
-    color: '#000000',
+    color: '#fff',
     fontSize: 20,
   },
   profileInfo: {
@@ -81,12 +83,12 @@ const styles = StyleSheet.create({
     borderRadius: 50,
   },
   name: {
-    fontSize: 24,
+    fontSize: 28,
     fontWeight: 'bold',
     color: 'black',
   },
   department: {
-    fontSize: 18,
+    fontSize: 22,
     color: 'black',
   },
   contentWrapper1: {
@@ -122,18 +124,23 @@ const styles = StyleSheet.create({
     backgroundColor: '#FFFFFF',
     alignItems: 'center',
     justifyContent: 'center',
-    height: 160,
-    width: 160,
-    borderRadius: 160 / 2,
+    height: 180,
+    width: 180,
+    borderRadius: 180 / 2,
     borderWidth: 1,
     borderColor: '#8D92A3',
     borderStyle: 'dashed',
   },
+  avatar: {
+    height: 154,
+    width: 154,
+    borderRadius: 90 / 2,
+  },
   addPhoto: {
-    backgroundColor: '#000000',
-    width: 140,
-    height: 140,
-    borderRadius: 140 / 2,
+    backgroundColor: '#fff',
+    width: 110,
+    height: 110,
+    borderRadius: 100 / 2,
     justifyContent: 'center',
     alignItems: 'center',
   },

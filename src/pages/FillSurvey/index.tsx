@@ -16,10 +16,10 @@ const FillSurvey = ({navigation}) => {
         <Gap height={5} />
         <TextInput2 label="" placeholder="Fill in your suggest and critics " />
       </View>
-      <Gap height={15} />
+      <Gap height={0} />
       <Button
         label="Submit"
-        backgroundColor="#8D92A3"
+        backgroundColor="#F5CC0D"
         textColor="#FFFFFF"
         onPress={() => navigation.navigate('StudentSurvey')}
       />
@@ -35,11 +35,11 @@ const styles = StyleSheet.create({
   },
   contentWrapper: {
     marginTop: 15,
-    marginLeft: 13,
+    marginLeft: 0,
     paddingHorizontal: 30,
     borderRadius: 10,
-    width: 425,
-    height: 300,
+    width: 412,
+    height: 80,
     backgroundColor: '#FFFFFF',
   },
   backgroundImage: {

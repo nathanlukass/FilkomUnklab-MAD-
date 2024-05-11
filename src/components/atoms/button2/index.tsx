@@ -15,7 +15,6 @@ const Button2 = ({
   textColor = 'black',
   onPress,
   type,
-  icon,
 }) => {
   const getIcon = label => {
     switch (label) {

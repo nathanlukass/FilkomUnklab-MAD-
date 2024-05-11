@@ -1,6 +1,13 @@
 import {StyleSheet, View, Text} from 'react-native';
 import React from 'react';
-import {Button3, Gap, TextInput2} from '../../components';
+import {
+  Button2,
+  Button3,
+  Button4,
+  Button6,
+  Button7,
+  Gap,
+} from '../../components';
 import {PageHeader2} from '../../components/molecules';
 
 const StudentSurvey = ({navigation}) => {
@@ -19,8 +26,8 @@ const StudentSurvey = ({navigation}) => {
         <Text style={styles.text2}> 10.10 - 11.30</Text>
         <Text style={styles.text2}> at Pioneer Chapel</Text>
 
-        <Gap height={20} />
-        <Button3
+        <Gap height={10} />
+        <Button7
           label="Add"
           backgroundColor="#8D92A3"
           textColor="#FFFFFF"
@@ -42,9 +49,9 @@ const styles = StyleSheet.create({
     marginLeft: 13,
     paddingHorizontal: 30,
     borderRadius: 10,
-    width: 425,
-    height: 300,
-    backgroundColor: '#796890',
+    width: 386,
+    height: 193,
+    backgroundColor: '#F5CC0D',
   },
   backgroundImage: {
     flex: 1,
@@ -52,17 +59,15 @@ const styles = StyleSheet.create({
     alignSelf: 'auto',
   },
   text: {
-    fontSize: 30,
+    fontSize: 25,
     fontWeight: 'bold',
-    marginBottom: 20,
+    marginBottom: 5,
     alignSelf: 'center',
     color: 'white',
   },
   text2: {
     fontSize: 20,
-    fontWeight: '',
-    marginBottom: 20,
-    alignSelf: 'right',
+    alignSelf: 'left',
     color: 'white',
   },
 });

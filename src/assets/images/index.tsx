@@ -14,6 +14,7 @@ import Notif from './Notif.png';
 import Kyboard from './keyboard.jpeg';
 import Mouse from './mousee.jpg';
 import MousePad from './mousepad.jpg';
+import Profilee from './Profilee.png';
 
 export {
   backGround,
@@ -32,4 +33,5 @@ export {
   MousePad,
   LogoUk,
   Back,
+  Profilee,
 };

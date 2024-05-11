@@ -15,6 +15,7 @@ import {
   StudentSurvey,
 } from '../pages';
 import {Admin} from '../pagesAdmin';
+import SignUp from '../pages/SignUp';
 
 const Stack = createNativeStackNavigator();
 const index = () => {
@@ -83,6 +84,11 @@ const index = () => {
       <Stack.Screen
         name="StudentSurvey"
         component={StudentSurvey}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="SignUp"
+        component={SignUp}
         options={{headerShown: false}}
       />
     </Stack.Navigator>

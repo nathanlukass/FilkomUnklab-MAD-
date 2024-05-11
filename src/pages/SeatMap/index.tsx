@@ -1,13 +1,6 @@
-import {
-  View,
-  Image,
-  Text,
-  StyleSheet,
-  TouchableOpacity,
-  ScrollView,
-} from 'react-native';
+import {View, Image, Text, StyleSheet} from 'react-native';
 import React from 'react';
-import {Gap, Button2} from '../../components';
+import {Gap, Button2, Button6} from '../../components';
 import {PageHeader1} from '../../components/molecules';
 
 const SeatMap = ({navigation}) => {
@@ -22,15 +15,15 @@ const SeatMap = ({navigation}) => {
       <Gap height={20} />
       <Text style={styles.subtitle}>Map Seat This Semester </Text>
       <Gap height={20} />
-      <Button2
+      <Button6
         label=" Open PDF "
-        backgroundColor="#796890"
+        backgroundColor="#F5CC0D"
         textColor="#FFFFFF"
-        onPress={() => navigation.navigate('StudentSurvey')}
+        onPress={() => navigation.navigate('')}
       />
       <View style={styles.imageContainer}>
         <Image
-          source={require('../../assets/images/UKK1.png')}
+          source={require('../../assets/images/FILKOM.png')}
           style={styles.image}
           resizeMode="contain"
         />
@@ -53,10 +46,10 @@ const styles = StyleSheet.create({
   },
 
   image: {
-    width: 200,
-    height: 150,
+    width: 300,
+    height: 300,
     resizeMode: 'cover',
-    marginTop: 100,
+    marginTop: 70,
     alignItems: 'center',
   },
 });

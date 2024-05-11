@@ -27,7 +27,7 @@ const Admin = ({navigation}) => {
       <View>
         <Button2
           label="Points Claim"
-          onPress={() => navigation.navigate('Points')}
+          onPress={() => navigation.navigate('SplashScreen')}
         />
       </View>
     </ScrollView>
