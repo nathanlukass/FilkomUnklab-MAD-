@@ -2,15 +2,24 @@ import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 import {Button4} from '../../../components/atoms';
 
-const PageHeader = ({label, exit, onPress, back, backk, notif}) => {
+const PageHeader = ({
+  label,
+  exit,
+  onPressExit,
+  back,
+  backk,
+  notif,
+  onPressNotif,
+  onPress,
+}) => {
   return (
     <View style={styles.container}>
       {exit && (
         <Button4
           type="icon-only"
           icon="icon-exit"
-          onPress={onPress}
-          style={(styles.button, styles.notifButton)} // tambahkan ini
+          onPress={onPressExit}
+          style={(styles.button, styles.notifButton)}
         />
       )}
       {back && (
@@ -18,7 +27,7 @@ const PageHeader = ({label, exit, onPress, back, backk, notif}) => {
           type="icon-only"
           icon="icon-back"
           onPress={onPress}
-          style={styles.button} // tambahkan ini
+          style={styles.button}
         />
       )}
       {backk && (
@@ -26,15 +35,15 @@ const PageHeader = ({label, exit, onPress, back, backk, notif}) => {
           type="icon-only"
           icon="icon-back"
           onPress={onPress}
-          style={styles.button} // tambahkan ini
+          style={styles.button}
         />
       )}
       {notif && (
         <Button4
           type="icon-only"
           icon="icon-notif"
-          onPress={onPress}
-          style={(styles.button, styles.notifButton)} // tambahkan ini
+          onPress={onPressNotif}
+          style={(styles.button, styles.notifButton)}
         />
       )}
       <Text style={styles.label}>{label}</Text>
@@ -60,10 +69,10 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
   button: {
-    width: 10,
-    height: 10,
+    width: 11,
+    height: 11,
   },
   notifButton: {
-    marginLeft: 1000, // tambahkan margin ke kanan untuk notif
+    marginLeft: 1000,
   },
 });

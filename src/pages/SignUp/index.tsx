@@ -3,7 +3,6 @@ import {
   View,
   ScrollView,
   TouchableOpacity,
-  Text,
   Image,
 } from 'react-native';
 import React, {useState} from 'react';
@@ -16,7 +15,7 @@ import {getDatabase, ref, set} from 'firebase/database';
 
 const SignUp = ({navigation}) => {
   const [photo, setPhoto] = useState(Profilee);
-  const [photoBase64, setPhotoBase64] = useState('');
+  const [photoForDB, setPhotoforDB] = useState('');
   const [fullName, setFullName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -38,7 +37,7 @@ const SignUp = ({navigation}) => {
       const assets = result.assets[0];
       const base64 = `data:${assets.type};base64, ${assets.base64}`;
       setPhoto({uri: base64});
-      setPhotoBase64(base64);
+      setPhotoforDB(base64);
     }
   };
 
@@ -46,7 +45,7 @@ const SignUp = ({navigation}) => {
     const dataUser = {
       fullName: fullName,
       email: email,
-      photo: photoBase64,
+      photo: photoForDB,
     };
     const auth = getAuth();
     const db = getDatabase();
@@ -54,26 +53,22 @@ const SignUp = ({navigation}) => {
       .then(userCredential => {
         // Signed up
         const user = userCredential.user;
-        console.log(user);
-        // simpan ke dalam realtime database
+
         set(ref(db, 'users/' + user.uid), dataUser);
         showMessage({
-          message: 'Registrasi berhasil, silahkan login',
+          message: 'Registration succesfull, Login now',
           type: 'success',
         });
         navigation.navigate('LoginStudents');
       })
       .catch(error => {
-        const errorCode = error.code;
         const errorMessage = error.message;
-        // ..
         showMessage({
           message: errorMessage,
           type: 'danger',
         });
       });
   };
-
   return (
     <ScrollView style={styles.container}>
       <PageHeader

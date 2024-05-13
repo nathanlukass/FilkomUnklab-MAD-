@@ -5,13 +5,13 @@ import {initializeApp} from 'firebase/app';
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: 'AIzaSyC6lHa_RKI26fLXhD40b0cvRgoi_E6hl8Q',
-  authDomain: 'demofilkomunklab.firebaseapp.com',
-  projectId: 'demofilkomunklab',
-  storageBucket: 'demofilkomunklab.appspot.com',
-  messagingSenderId: '197632883350',
-  appId: '1:197632883350:web:01692eba9b7a8494a220b7',
-  databaseURL: 'https://demofilkomunklab-default-rtdb.firebaseio.com/',
+  apiKey: 'AIzaSyDwZtGPx2Sd50YxJH5GNRhp-bfyC9Wh3ZA',
+  authDomain: 'filkomunklab.firebaseapp.com',
+  projectId: 'filkomunklab',
+  storageBucket: 'filkomunklab.appspot.com',
+  messagingSenderId: '863006022439',
+  appId: '1:863006022439:web:2cda27efbbad519e22e702',
+  databaseURL: 'https://filkomunklab-default-rtdb.firebaseio.com/',
 };
 
 // Initialize Firebase

@@ -2,7 +2,7 @@ import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import Router from './src/router';
 import FlashMessage from 'react-native-flash-message';
-import './src/config/firebase/index';
+import './src/config/firebase';
 
 const App = () => {
   return (

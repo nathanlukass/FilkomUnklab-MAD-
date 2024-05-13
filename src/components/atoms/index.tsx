@@ -8,6 +8,7 @@ import Button1 from './button1';
 import Button3 from './button3';
 import Button6 from './button6';
 import Button7 from './button7';
+import Button8 from './button8';
 
 export {
   Button,
@@ -20,4 +21,5 @@ export {
   Button1,
   Button6,
   Button7,
+  Button8,
 };

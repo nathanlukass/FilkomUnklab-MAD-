@@ -4,6 +4,7 @@ import PageHeader2 from './PageHeader2';
 import TextInput2 from './TextInput2';
 import PageHeader from './PageHeader';
 import PageHeader3 from './PageHeader3';
+import TextInput3 from './TextInput3';
 
 export {
   PageHeader1,
@@ -12,4 +13,5 @@ export {
   TextInput2,
   PageHeader,
   PageHeader3,
+  TextInput3,
 };

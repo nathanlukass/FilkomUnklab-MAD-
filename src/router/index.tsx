@@ -13,8 +13,9 @@ import {
   StudentAtt,
   FillSurvey,
   StudentSurvey,
+  Notifications,
 } from '../pages';
-import {Admin} from '../pagesAdmin';
+import {Admin, AdminAtt, AdminSurvey, AdminPoints} from '../pagesAdmin/index';
 import SignUp from '../pages/SignUp';
 
 const Stack = createNativeStackNavigator();
@@ -89,6 +90,26 @@ const index = () => {
       <Stack.Screen
         name="SignUp"
         component={SignUp}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="AdminAtt"
+        component={AdminAtt}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="AdminSurvey"
+        component={AdminSurvey}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="AdminPoints"
+        component={AdminPoints}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="Notifications"
+        component={Notifications}
         options={{headerShown: false}}
       />
     </Stack.Navigator>

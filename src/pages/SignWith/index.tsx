@@ -13,7 +13,7 @@ const SignWith = ({navigation}) => {
         onPress={() => navigation.navigate('SignWith')}
         type="default"
       />
-      <Gap height={530} />
+      <Gap height={450} />
       <Button
         label="L o g i n  Admin"
         onPress={() => navigation.navigate('LoginAdmin')}
