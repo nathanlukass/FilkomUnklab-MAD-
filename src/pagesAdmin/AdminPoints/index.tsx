@@ -16,7 +16,7 @@ const AdminPoints = ({navigation}) => {
       <View style={styles.contentWrapper}>
         <Text style={styles.label}>
           <Text style={styles.boldName}>John, Doe</Text> has submitted a 100
-          Point reward claim request
+          Point reward claim request for reward
         </Text>
         <Gap height={25} />
         <Button8
