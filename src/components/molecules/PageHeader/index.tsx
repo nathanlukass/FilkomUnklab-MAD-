@@ -1,12 +1,50 @@
-import {StyleSheet, Text, View, Image} from 'react-native';
+import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
-import {Button} from '../../atoms';
+import {Button4} from '../../../components/atoms';
 
-const PageHeader = ({label, backButton, onPress, type}) => {
+const PageHeader = ({
+  label,
+  exit,
+  onPressExit,
+  back,
+  backk,
+  notif,
+  onPressNotif,
+  onPress,
+}) => {
   return (
     <View style={styles.container}>
-      {backButton && (
-        <Button type="icon-only" icon="icon-back" onPress={onPress} />
+      {exit && (
+        <Button4
+          type="icon-only"
+          icon="icon-exit"
+          onPress={onPressExit}
+          style={(styles.button, styles.notifButton)}
+        />
+      )}
+      {back && (
+        <Button4
+          type="icon-only"
+          icon="icon-back"
+          onPress={onPress}
+          style={styles.button}
+        />
+      )}
+      {backk && (
+        <Button4
+          type="icon-only"
+          icon="icon-back"
+          onPress={onPress}
+          style={styles.button}
+        />
+      )}
+      {notif && (
+        <Button4
+          type="icon-only"
+          icon="icon-notif"
+          onPress={onPressNotif}
+          style={(styles.button, styles.notifButton)}
+        />
       )}
       <Text style={styles.label}>{label}</Text>
     </View>
@@ -16,35 +54,25 @@ const PageHeader = ({label, backButton, onPress, type}) => {
 export default PageHeader;
 
 const styles = StyleSheet.create({
-  containerWithPhoto: {
-    backgroundColor: '#FFFFFF',
-    paddingHorizontal: 24,
-    paddingVertical: 37,
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-  },
   container: {
-    backgroundColor: '#FFFFFF',
-    paddingLeft: 24,
-    paddingVertical: 37,
+    backgroundColor: '#F5CC0D',
+    paddingLeft: 22,
+    paddingVertical: 23,
     flexDirection: 'row',
     alignItems: 'center',
   },
   label: {
-    fontFamily: 'Poppins-Medium',
-    fontSize: 22,
-    color: '#020202',
-    marginLeft: 26,
-  },
-  appTitle: {
-    fontFamily: 'Poppins-Medium',
-    fontSize: 22,
-    color: '#020202',
-  },
-  appSubTitle: {
     fontFamily: 'Poppins-Light',
-    fontSize: 14,
-    color: '#8D92A3',
+    fontSize: 20,
+    color: '#000000',
+    marginLeft: 135,
+    fontWeight: 'bold',
+  },
+  button: {
+    width: 11,
+    height: 11,
+  },
+  notifButton: {
+    marginLeft: 1000,
   },
 });

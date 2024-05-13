@@ -1,14 +1,38 @@
 import React from 'react';
-import {View, Text, StyleSheet, Image, ScrollView} from 'react-native';
+import {
+  View,
+  Text,
+  StyleSheet,
+  TouchableOpacity,
+  ScrollView,
+  Image,
+} from 'react-native';
 import {Gap} from '../../components';
+import {PageHeader} from '../../components/molecules';
+import {Profilee} from '../../assets';
 
-const ProfileScreen = () => {
+const ProfileScreen = ({navigation}) => {
   return (
     <ScrollView>
       <View style={styles.container}>
+        <PageHeader
+          label="Profile"
+          back={true}
+          onPress={() => navigation.goBack()}
+          type="default" // Add the 'type' prop with a default value
+        />
         <View style={styles.header}>
-          <Text style={styles.headerText}>Profile</Text>
-          <Gap height={210} />
+          <Gap height={10} />
+          <View style={styles.profileContainer}>
+            <View style={styles.profile}>
+              <View style={styles.addPhoto}>
+                <TouchableOpacity>
+                  <Image source={Profilee} style={styles.avatar} />
+                </TouchableOpacity>
+              </View>
+            </View>
+          </View>
+          <Gap height={23} />
           <Text style={styles.name}>John, Doe</Text>
           <Text style={styles.department}>Informatics</Text>
         </View>
@@ -23,7 +47,7 @@ const ProfileScreen = () => {
           <Text style={styles.balance1}>s22123456@student.unklab.ac.id</Text>
           <View style={styles.line} />
           <Text style={styles.balance}>Forum Points</Text>
-          <Text style={styles.balance1}>100</Text>
+          <Text style={styles.balance1}>150</Text>
           <View style={styles.line} />
           <Text style={styles.balance}>Seat Number</Text>
           <Text style={styles.balance1}>B-10-5</Text>
@@ -40,14 +64,14 @@ const styles = StyleSheet.create({
     height: 1000,
   },
   header: {
-    backgroundColor: '#796890',
+    backgroundColor: '#F5CC0D',
     height: 333,
     alignItems: 'center',
     borderBottomEndRadius: 30,
     borderBottomStartRadius: 30,
   },
   headerText: {
-    color: '#000000',
+    color: '#fff',
     fontSize: 20,
   },
   profileInfo: {
@@ -59,19 +83,19 @@ const styles = StyleSheet.create({
     borderRadius: 50,
   },
   name: {
-    fontSize: 24,
+    fontSize: 28,
     fontWeight: 'bold',
     color: 'black',
   },
   department: {
-    fontSize: 18,
+    fontSize: 22,
     color: 'black',
   },
   contentWrapper1: {
     flex: 1,
     marginTop: 24,
     paddingHorizontal: 25,
-    backgroundColor: 'white',
+    backgroundColor: '',
   },
   balance: {
     fontSize: 20,
@@ -88,79 +112,44 @@ const styles = StyleSheet.create({
     paddingBottom: 2, // reduced padding
     fontWeight: 'bold',
   },
-  balanceMoney: {
-    fontSize: 24,
-    fontFamily: 'Poppins-Medium',
-    color: 'black',
-    textAlign: 'center',
-    marginBottom: 18,
-  },
   line: {
     borderBottomColor: 'black',
     borderBottomWidth: 1,
   },
-  cashOn: {
-    flexDirection: 'row',
+  profileContainer: {
+    marginTop: 26,
+    alignItems: 'center',
   },
-  cashOnStyle1: {
-    fontSize: 14,
-    fontFamily: 'Poppins-Medium',
-    color: 'black',
-    paddingTop: 20,
-  },
-  cashOnMoney1: {
-    fontSize: 14,
-    fontFamily: 'Poppins-Medium',
-    color: 'black',
-    paddingTop: 20,
-    paddingLeft: 20,
-  },
-  cashOnStyle2: {
-    fontSize: 14,
-    fontFamily: 'Poppins-Medium',
-    color: 'black',
-    paddingTop: 11,
-  },
-  cashOnMoney2: {
-    fontSize: 14,
-    fontFamily: 'Poppins-Medium',
-    color: 'black',
-    paddingTop: 11,
-    paddingLeft: 20,
-  },
-  contentWrapper2: {
-    flex: 1,
-    marginTop: 24,
-    paddingHorizontal: 25,
-    backgroundColor: 'white',
-    paddingBottom: 72,
-  },
-  transactionText: {
-    fontSize: 16,
-    fontFamily: 'Poppins-Medium',
-    color: 'black',
-    paddingTop: 10.6,
-    marginBottom: 9,
-  },
-  contentWrapper3: {
-    flex: 2,
-    marginTop: 24,
-    paddingHorizontal: 25,
-    backgroundColor: 'white',
-    flexDirection: 'row',
+  profile: {
+    backgroundColor: '#FFFFFF',
+    alignItems: 'center',
     justifyContent: 'center',
+    height: 180,
+    width: 180,
+    borderRadius: 180 / 2,
+    borderWidth: 1,
+    borderColor: '#8D92A3',
+    borderStyle: 'dashed',
   },
-  homeIcon: {
-    paddingTop: 15,
-    paddingBottom: 15,
-    flex: 1,
+  avatar: {
+    height: 154,
+    width: 154,
+    borderRadius: 90 / 2,
+  },
+  addPhoto: {
+    backgroundColor: '#fff',
+    width: 110,
+    height: 110,
+    borderRadius: 100 / 2,
+    justifyContent: 'center',
     alignItems: 'center',
   },
-  squareFrame: {
-    paddingTop: 15,
-    paddingBottom: 15,
-    flex: 1,
-    alignItems: 'center',
+  addPhotoLabel: {
+    fontFamily: 'Poppins-Light',
+    fontSize: 14,
+    width: 40,
+    textAlign: 'center',
+    color: '#F5CC0D',
   },
 });
 

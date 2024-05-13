@@ -1,23 +1,28 @@
 import {StyleSheet, View, ImageBackground} from 'react-native';
-import React, {useState} from 'react';
+import React from 'react';
 import {Button, Gap} from '../../components/atoms';
 import {backGround} from '../../assets/images';
+import {PageHeader3} from '../../components';
 
 const SignWith = ({navigation}) => {
   return (
     <ImageBackground source={backGround} style={styles.backgroundImage}>
-      <View style={styles.container}>
-        <Gap height={500} />
-        <Button
-          label="Login Admin"
-          onPress={() => navigation.navigate('SplashScreen')}
-        />
-        <Gap height={12} />
-        <Button
-          label="Login Student"
-          onPress={() => navigation.navigate('Home')}
-        />
-      </View>
+      <PageHeader3
+        label="Welcome!"
+        back={false}
+        onPress={() => navigation.navigate('SignWith')}
+        type="default"
+      />
+      <Gap height={450} />
+      <Button
+        label="L o g i n  Admin"
+        onPress={() => navigation.navigate('LoginAdmin')}
+      />
+      <Gap height={6} />
+      <Button
+        label="L o g i n  Students"
+        onPress={() => navigation.navigate('LoginStudents')}
+      />
     </ImageBackground>
   );
 };
@@ -28,7 +33,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
-    alignItems: 'center',
+    alignItems: 'baseline',
   },
   backgroundImage: {
     flex: 1,

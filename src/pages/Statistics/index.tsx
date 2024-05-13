@@ -1,11 +1,18 @@
 import React from 'react';
 import {StyleSheet, Text, View, ScrollView, Image} from 'react-native';
 import {Button3, Gap} from '../../components/atoms';
+import {PageHeader} from '../../components';
 
 const Statistics = ({navigation}) => {
   return (
     <ScrollView style={styles.page}>
-      <Gap height={110} />
+      <PageHeader
+        label="Statistics"
+        back={true}
+        onPress={() => navigation.goBack()}
+        type="default" // Add the 'type' prop with a default value
+      />
+      <Gap height={22} />
       <View style={styles.row}>
         <Button3
           label="Student Forum"
@@ -13,7 +20,7 @@ const Statistics = ({navigation}) => {
           label2="P R E S E N T"
           status="Present"
           backgroundColor="black"
-          textColor="white"
+          textColor="black"
         />
       </View>
       <Gap height={15} />
@@ -24,7 +31,7 @@ const Statistics = ({navigation}) => {
           label2="P R E S E N T"
           status="Present"
           backgroundColor="black"
-          textColor="white"
+          textColor="black"
         />
       </View>
       <Gap height={15} />
@@ -35,7 +42,7 @@ const Statistics = ({navigation}) => {
           label2="L A T E"
           status="Late"
           backgroundColor="black"
-          textColor="white"
+          textColor="black"
         />
       </View>
       <Gap height={15} />
@@ -46,7 +53,7 @@ const Statistics = ({navigation}) => {
           label2="L A T E"
           status="Late"
           backgroundColor="black"
-          textColor="white"
+          textColor="black"
         />
       </View>
       <Gap height={15} />
@@ -57,7 +64,7 @@ const Statistics = ({navigation}) => {
           label2="P R E S E N T"
           status="Present"
           backgroundColor="black"
-          textColor="white"
+          textColor="black"
         />
       </View>
       <Gap height={15} />
@@ -68,7 +75,7 @@ const Statistics = ({navigation}) => {
           label2="P R E S E N T"
           status="Present"
           backgroundColor="black"
-          textColor="white"
+          textColor="black"
         />
       </View>
       <Gap height={15} />
@@ -79,7 +86,7 @@ const Statistics = ({navigation}) => {
           label2="A B S E N T"
           status="Absent"
           backgroundColor="black"
-          textColor="white"
+          textColor="black"
         />
       </View>
       <Gap height={15} />
@@ -90,7 +97,7 @@ const Statistics = ({navigation}) => {
           label2="A B S E N T"
           status="Absent"
           backgroundColor="black"
-          textColor="white"
+          textColor="black"
         />
       </View>
     </ScrollView>

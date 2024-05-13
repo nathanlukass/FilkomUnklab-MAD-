@@ -1,13 +1,20 @@
 import React from 'react';
-import {StyleSheet, Text, View, ScrollView, Image} from 'react-native';
+import {StyleSheet, View, ScrollView} from 'react-native';
 import {Gap} from '../../components/atoms';
 import {Button2} from '../../components/atoms';
-import {PageHeader} from '../../components/molecules/PageHeader';
+import {PageHeader} from '../../components/molecules';
 
 const Home = ({navigation}) => {
   return (
     <ScrollView style={styles.page}>
-      <Gap height={150} />
+      <PageHeader
+        exit={true}
+        notif={true}
+        onPressExit={() => navigation.navigate('SignWith')}
+        onPressNotif={() => navigation.navigate('Notifications')}
+        type="default" // Add the 'type' prop with a default value
+      />
+      <Gap height={14} />
       <View style={styles.row}>
         <Button2
           label="Profile"
@@ -15,29 +22,29 @@ const Home = ({navigation}) => {
         />
         <Button2
           label="Take Attendance"
-          onPress={() => navigation.navigate('SplashScreen')}
+          onPress={() => navigation.navigate('StudentAtt')}
         />
       </View>
-      <Gap height={25} />
+      <Gap height={13} />
       <View style={styles.row}>
         <Button2
           label="Seatting Map"
-          onPress={() => navigation.navigate('SplashScreen')}
+          onPress={() => navigation.navigate('SeatMap')}
         />
         <Button2
           label="Statistics"
           onPress={() => navigation.navigate('Statistics')}
         />
       </View>
-      <Gap height={25} />
+      <Gap height={13} />
       <View style={styles.row}>
         <Button2
           label="Forum Survey"
-          onPress={() => navigation.navigate('SplashScreen')}
+          onPress={() => navigation.navigate('StudentSurvey')}
         />
         <Button2
           label="Points Claim"
-          onPress={() => navigation.navigate('SplashScreen')}
+          onPress={() => navigation.navigate('Points')}
         />
       </View>
     </ScrollView>
@@ -52,7 +59,7 @@ const styles = StyleSheet.create({
   },
   row: {
     flexDirection: 'row',
-    justifyContent: 'space-between',
+    justifyContent: 'center',
     marginHorizontal: 10,
     marginBottom: 25,
   },

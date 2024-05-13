@@ -1,11 +1,11 @@
 import {StyleSheet, Text, TouchableOpacity} from 'react-native';
-import React from 'react';
-import {Exit, Notif, Profile, BackButton} from '../../../assets/icon';
+import {React, useState} from 'react';
+import {BackButton} from '../../../assets/icon';
 
-const index = ({
+const Button = ({
   label,
-  backgroundColor = 'white',
-  textColor = 'black',
+  backgroundColor = '#F5CC0D',
+  textColor = 'black', // Ubah warna teks menjadi hitam
   onPress,
   type,
   icon,
@@ -13,10 +13,7 @@ const index = ({
   if (type === 'icon-only') {
     return (
       <TouchableOpacity activeOpacity={0.7} onPress={onPress}>
-        {icon === 'icon-exit' && <Exit />}
-        {icon === 'icon-notif' && <Notif />}
         {icon === 'icon-back' && <BackButton />}
-        {icon === 'icon-profile' && <Profile />}
       </TouchableOpacity>
     );
   }
@@ -29,20 +26,29 @@ const index = ({
     </TouchableOpacity>
   );
 };
-export default index;
+export default Button;
 
 const styles = StyleSheet.create({
   container: backgroundColor => ({
-    backgroundColor: backgroundColor,
+    backgroundColor: backgroundColor, // Gunakan backgroundColor dari props
+    borderWidth: 2,
+    borderColor: '#020202',
     paddingVertical: 12,
     borderRadius: 25,
-    width: 200,
+    width: 210,
+    height: 50,
     alignSelf: 'center',
   }),
   label: textColor => ({
     textAlign: 'center',
     fontFamily: 'Poppins-Medium',
-    fontSize: 19,
-    color: textColor,
+    fontSize: 15,
+    fontWeight: 'bold',
+    justifyContent: 'center',
+    color: textColor, // Gunakan textColor dari props
+    fontFamily: 'Poppins-Black',
+    fontSize: 18,
+    fontWeight: 'bold',
+    color: 'black',
   }),
 });

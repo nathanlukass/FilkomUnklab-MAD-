@@ -8,13 +8,13 @@ const Button3 = ({
   label2,
   status = 'Present', // tambahkan status sebagai prop dengan default 'Present'
   backgroundColor = 'black',
-  textColor = 'white',
+  textColor = 'black',
 }) => {
   // fungsi untuk mendapatkan warna berdasarkan status
   const getStatusColor = status => {
     switch (status) {
       case 'Late':
-        return '#E0D92C';
+        return '#FFFFFF';
       case 'Absent':
         return '#DA1A1A';
       case 'Present':
@@ -37,7 +37,7 @@ export default Button3;
 
 const styles = StyleSheet.create({
   container: backgroundColor => ({
-    backgroundColor: '#796890',
+    backgroundColor: '#F5CC0D',
     borderRadius: 17,
     width: 331,
     height: 120,
