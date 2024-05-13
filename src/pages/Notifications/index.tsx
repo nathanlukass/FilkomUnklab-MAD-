@@ -22,7 +22,7 @@ const Notifications = ({navigation}) => {
       <View style={styles.container1}>
         <View style={styles.contentWrapper1}>
           <Text style={styles.label1}>
-            Today's forum attendance has been sent!
+            Your Points claim request has been accepted!
           </Text>
         </View>
       </View>
