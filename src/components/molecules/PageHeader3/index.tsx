@@ -2,7 +2,7 @@ import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 import {Button4} from '../../../components/atoms';
 
-const PageHeader = ({label, exit, onPress, back, backk, notif}) => {
+const PageHeader3 = ({label, exit, onPress, back, backk, notif}) => {
   return (
     <View style={styles.container}>
       {exit && (
@@ -42,7 +42,7 @@ const PageHeader = ({label, exit, onPress, back, backk, notif}) => {
   );
 };
 
-export default PageHeader;
+export default PageHeader3;
 
 const styles = StyleSheet.create({
   container: {

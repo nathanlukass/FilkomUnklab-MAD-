@@ -16,18 +16,18 @@ const Admin = ({navigation}) => {
       <View style={styles.row}>
         <Button2
           label="Take Attendance"
-          onPress={() => navigation.navigate('SplashScreen')}
+          onPress={() => navigation.navigate('AdminAtt')}
         />
         <Button2
           label="Forum Survey"
-          onPress={() => navigation.navigate('SplashScreen')}
+          onPress={() => navigation.navigate('AdminSurvey')}
         />
       </View>
       <Gap height={13} />
       <View>
         <Button2
           label="Points Claim"
-          onPress={() => navigation.navigate('SplashScreen')}
+          onPress={() => navigation.navigate('AdminPoints')}
         />
       </View>
     </ScrollView>

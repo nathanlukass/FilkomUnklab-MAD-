@@ -9,7 +9,9 @@ const Home = ({navigation}) => {
     <ScrollView style={styles.page}>
       <PageHeader
         exit={true}
-        onPress={() => navigation.navigate('SignWith')}
+        notif={true}
+        onPressExit={() => navigation.navigate('SignWith')}
+        onPressNotif={() => navigation.navigate('Notifications')}
         type="default" // Add the 'type' prop with a default value
       />
       <Gap height={14} />

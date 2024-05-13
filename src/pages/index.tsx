@@ -10,6 +10,7 @@ import SeatMap from './SeatMap';
 import FillSurvey from './FillSurvey';
 import StudentAtt from './StudentAtt';
 import StudentSurvey from './StudentSurvey';
+import Notifications from './Notifications';
 
 export {
   LoginAdmin,
@@ -24,4 +25,5 @@ export {
   FillSurvey,
   StudentAtt,
   StudentSurvey,
+  Notifications,
 };

@@ -1,24 +1,20 @@
 import {StyleSheet, View, Text, ImageBackground} from 'react-native';
 import React, {useState} from 'react';
 import {Buttonn, Gap} from '../../components/atoms';
-import {PageHeader, PageHeader3} from '../../components/molecules';
+import {PageHeader3} from '../../components/molecules';
 import {TextInput2} from '../../components/molecules';
 import {backGround} from '../../assets/images';
 import {getAuth, signInWithEmailAndPassword} from 'firebase/auth';
 import {showMessage} from 'react-native-flash-message';
-import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const LoginStudents = ({navigation}) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
   const onSubmit = () => {
-    console.log('Email: ', email); // Memeriksa nilai email
-    console.log('Password: ', password); // Memeriksa nilai password
     const auth = getAuth();
     signInWithEmailAndPassword(auth, email, password)
       .then(userCredential => {
-        // Signed in
         const user = userCredential.user;
         console.log(user);
       })
@@ -33,20 +29,9 @@ const LoginStudents = ({navigation}) => {
 
   return (
     <ImageBackground source={backGround} style={styles.backgroundImage}>
-      {/* <Text
-        style={{
-          fontSize: 25,
-          textAlign: 'center',
-          fontFamily: 'Poppins-Black',
-          fontWeight: '',
-          color: 'white',
-          marginTop: 30,
-        }}>
-        Student
-      </Text> */}
       <PageHeader3
         label="Student"
-        back={true}
+        back={false}
         onPress={() => navigation.navigate('SignWith')}
         type="default"
       />
@@ -71,9 +56,9 @@ const LoginStudents = ({navigation}) => {
           value={email}
           onChangeText={value => {
             setEmail(value);
-            console.log('Updated Email: ', value); // Menambahkan console.log untuk memeriksa perubahan nilai email
           }}
         />
+
         <Gap height={10} />
         <TextInput2
           label="Password"
@@ -82,7 +67,7 @@ const LoginStudents = ({navigation}) => {
           value={password}
           onChangeText={value => {
             setPassword(value);
-            console.log('Updated Password: ', value); // Menambahkan console.log untuk memeriksa perubahan nilai password
+            // secureTextEntry={true}
           }}
         />
         <Gap height={25} />
@@ -118,7 +103,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   contentWrapper: {
-    marginTop: 185,
+    marginTop: 155,
     marginLeft: 30,
     paddingHorizontal: 30,
     borderRadius: 30,
