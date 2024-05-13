@@ -20,7 +20,7 @@ const AdminSurvey = ({navigation}) => {
         </View>
         <Text style={styles.react}>
           today's activity is quite good, it just needs to be developed to be
-          even better.
+          even better. Thankyou!
         </Text>
       </View>
     </View>
