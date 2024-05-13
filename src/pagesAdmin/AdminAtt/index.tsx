@@ -16,7 +16,7 @@ const AdminAtt = ({navigation}) => {
       <View style={styles.contentWrapper}>
         <TextInput3 placeholder="dd/mm/yyyy" style={styles.textInput} />
         <TextInput3 placeholder="time" style={styles.textInput} />
-        <TextInput3 placeholder="room/location" style={styles.textInput} />
+        <TextInput3 placeholder="location" style={styles.textInput} />
         <Gap height={26} />
         <Button8
           label="Assign"
